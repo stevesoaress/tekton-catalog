@@ -98,7 +98,7 @@ spec:
         #!/bin/bash
         set -e -o pipefail
         curl -sSL "https://gist.githubusercontent.com/pschultz/6388910/raw/5fa0681d8a8aadd60ff1aa6f947ce8754fab3d8c/color_test.sh" > color_test.sh
-        echo "\ncolor_test" >> color_test.sh
+        echo -e "\ncolor_test" >> color_test.sh
         chmod 755 color_test.sh
         cat color_test.sh
         bash color_test.sh
